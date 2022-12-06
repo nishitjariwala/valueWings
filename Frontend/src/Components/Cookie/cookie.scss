@@ -1,0 +1,27 @@
+.box {
+  border: 1px solid;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: auto;
+}
+.cookiealert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 0;
+  transform: translateY(100%);
+  transition: all 1000ms ease-out;
+  color: #ecf0f1;
+  background: #212327 
+}
+.cookiealert.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}

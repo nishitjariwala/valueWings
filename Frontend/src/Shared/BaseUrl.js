@@ -1,0 +1,1 @@
+export const baseUrl = 'https://value-wings.herokuapp.com/api/'

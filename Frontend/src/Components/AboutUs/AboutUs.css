@@ -1,0 +1,114 @@
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+}
+.fakeimg_img {
+  height: 190px;
+  width: 200px;
+}
+
+.heading1 {
+  overflow: hidden;
+  text-align: center;
+}
+
+.heading1:before,
+.heading1:after {
+  background-color: #636cff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.heading1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.heading1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.rectangelBox {
+  width: 50px;
+  height: 50px;
+  background-color: #636cff;
+  position: absolute;
+}
+.overlaping {
+  position: absolute;
+}
+.list {
+  text-align: left;
+}
+.list_item {
+  padding: 10px;
+  font-size: 20px;
+}
+.row_item {
+  padding: 20px;
+}
+.smallImg {
+  height: 40px;
+  width: 40px;
+  margin-left: 46.5%;
+
+  text-align: center;
+  padding-bottom: 20px;
+}
+.midiumImg {
+  height: 55px;
+  width: 55px;
+  margin-left: 44.5%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.largeImg {
+  height: 70px;
+  width: 70px;
+  margin-left: 44%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 700px) {
+  .rectangelBox {
+    display: none;
+  }
+  .heading1:before,
+  .heading1:after {
+    background-color: white;
+    vertical-align: bottom;
+  }
+}
+.faqHeader {
+  font-size: 27px;
+  margin: 20px;
+}
+
+.panel-heading1 [data-toggle="collapse"]:after {
+  font-family: "Glyphicons Halflings";
+  content: "e072"; /* "play" icon */
+  float: right;
+  color: #f58723;
+  font-size: 18px;
+  line-height: 22px;
+  /* rotate "play" icon from > (right arrow) to down arrow */
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.panel-heading1 [data-toggle="collapse"].collapsed:after {
+  /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  color: #454444;
+}
